@@ -1,0 +1,339 @@
+:root {
+    --main-color: #ff2953;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.scroller{
+    position: fixed;
+    background-color: aliceblue;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.btn-box {
+    color: white;
+    text-decoration: none;
+    border: 0.1rem solid white;
+    padding: 0.6rem 2.5rem;
+}
+.btn-box:hover {
+    color: black;
+    background-color: white;
+}
+.main-header {
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+    position: relative;
+}
+.main-header::after {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: var(--main-color);
+    bottom: 30%;
+    left: 48%;
+}
+@media (max-width: 767px) {
+    .main-header::after {
+        content: '';
+        position: absolute;
+        width: 4rem;
+        height: 0.3rem;
+        background-color: var(--main-color);
+        bottom: 30%;
+        left: 40%;
+    }
+}
+/* start header */
+header {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar .navbar-title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.navbar .nav-item {
+    padding: 1rem 1.4rem;
+}
+.navbar .nav-item a,
+.navbar .icon {
+    color: white;
+    font-size: 1rem;
+}
+.navbar .nav-item a {
+    position: relative;
+}
+.navbar .nav-item a:hover::after {
+    content: '';
+    position: absolute;
+    width: 85%;
+    height: 0.2rem;
+    background-color: var(--main-color);
+    bottom: 10%;
+    right: 0.5rem;
+    transition: 0.3s;
+}
+.navbar .nav-item a.best{
+    position: relative;
+}
+.navbar .nav-item a.best::after {
+    content: '';
+    position: absolute;
+    width: 2.6rem;
+    height: 0.2rem;
+    background-color: var(--main-color);
+    bottom: 10%;
+    right: 0.5rem;
+}
+.navbar .icon-nav {
+    padding-right: 0.8rem;
+    color: white;
+}
+header .slider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+header .slider h4 {
+    font-size: 2.4rem;
+}
+header .slider h3 {
+    font-size: 2.8rem;
+}
+header .slider h2 {
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+}
+header .slider h4, h3, h2 {
+    font-weight: bold;
+}
+header .slider p {
+    margin: 1.5rem 0 2.5rem ;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/* end header */
+/* start section-whyus*/
+.whyus {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../images/us-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.whyus .box {
+    text-align: center;
+    
+}
+.whyus .box h2 {
+    font-size: 1.3rem;
+    padding-top: 1.2rem ;
+}
+.whyus .box p {
+    line-height: 1.5;
+    font-size: 1rem;
+}
+/* end section-whyus*/
+/*start section-healthy*/
+.healthy {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../images/healthy-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.healthy .box {
+    color: #ffffff;
+    text-align: center;
+}
+.healthy .box p {
+    padding: 1.7rem 0;
+    font-size: 1.1rem;
+}
+/*end section-healthy*/
+/*start section-trainers*/
+.trainers {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../images/trainer-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.trainers .box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .trainers .box {
+        margin-bottom: 1.5rem;
+    }
+}
+.trainers .box .name h3 {
+    font-size: 1.3rem;
+    color: white;
+    padding-bottom: 0.4rem;
+}
+.trainers .box .img-box img {
+    border-radius: 0.9rem;
+}
+@media (max-width: 767px) {
+    .trainers .box img {
+        max-width: 95%;
+    }
+}
+.trainers .box .icon {
+    background-color: white;
+    margin: 0 auto ;
+    width: fit-content;
+    padding: 0.7rem 2.5rem;
+    border-radius: 5rem;
+    margin-top: -25px;
+}
+.trainers .box .icon i {
+    color: var(--main-color);
+    padding-left: 1rem;
+    font-size: 1.5rem;
+} 
+/*end section-trainers*/
+/*start section-contact*/
+.contact {
+    background-color: #27223f;
+}
+.head-text{
+    position: relative;
+}
+.head-text::after {
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+}
+.contact .img-box img{
+    width: 100%;
+}
+@media (max-width: 767px){
+    .contact img {
+        display: none;
+    }
+}
+.contact h2 {
+    color: white;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+
+}
+.contact .form input {
+    display: block;
+    height: 3.5rem;
+    margin-bottom: 2rem;
+    width: 40rem;
+}
+.contact .form input[type="text"]:focus,
+.contact .form input[type="email"]:focus,
+.contact .form input[type="tel"]:focus {
+    outline: none;
+}
+.contact .form input[type="text"]::placeholder,
+.contact .form input[type="email"]::placeholder,
+.contact .form input[type="tel"]::placeholder{
+    color: black;
+    padding-top: 2rem;
+} 
+.contact .form textarea {
+    width: 40rem;
+    height: 8rem;
+    outline: none;
+    padding-top: 2rem;
+}
+.contact .form textarea::placeholder {
+    color: black;
+    padding-left: 0.1rem;
+}
+.contact .form a {
+    display: block;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-left: 29.5rem;
+    padding: 0.7rem 4rem;
+    width: fit-content;
+}
+@media (max-width: 767px){
+    .contact .form input,
+    .contact .form textarea {
+        width: 20rem;
+        margin-left: -1rem;
+    }
+    .contact .form a {
+        margin: 2rem auto;
+    }
+}
+/*end section-contact*/
+.icon {
+    background-color: #252233;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.icon .box-item{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.icon .box-item a {
+    font-size: 3rem;
+    color: white;
+}
+.icon .box-item a:hover {
+    color: var(--main-color);
+}
+@media (max-width: 767px){
+    .icon .box-item{
+        display: flex;
+        flex-direction: column;
+    }
+}
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+footer p {
+    font-size: 1.3rem;
+}
+@media (max-width: 767px){
+    footer p {
+        font-size: 1rem;
+    }
+}
